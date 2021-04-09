@@ -108,7 +108,7 @@ buyAsync(500)
 ```
 
 - all: 비동기 처리 여러개를 병렬로 실행
-`Promise.all(iterable);` => 인자: 반복 가능한 객체
+- `Promise.all(iterable);` => 인자: 반복 가능한 객체
 ```js
 const buyAsync = (name, mymoney) => {
   return new Promise((resolve, reject) => {
@@ -139,7 +139,7 @@ Promise.all([
 ```
 
 - race: 가장 먼저 종료된 Promise 객체의 결과만 다음 작업으로 전달
-`Promise.race(iterable)`
+- `Promise.race(iterable)`
 ```js
 const buyAsync = (name, mymoney) => {
   return new Promise((resolve, reject) => {
